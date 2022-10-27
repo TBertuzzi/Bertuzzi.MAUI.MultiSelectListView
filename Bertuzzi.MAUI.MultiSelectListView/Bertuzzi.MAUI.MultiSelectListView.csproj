@@ -15,12 +15,34 @@
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</SupportedOSPlatformVersion>
 		<TargetPlatformMinVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</TargetPlatformMinVersion>
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'tizen'">6.5</SupportedOSPlatformVersion>
+
+		<Company>tbertuzzi</Company>
+		<Authors>tbertuzzi</Authors>
+		<Copyright>Copyright ©2022 tbertuzzi</Copyright>
+		<PackageProjectUrl>https://github.com/TBertuzzi/Bertuzzi.MAUI.MultiSelectListView</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/TBertuzzi/Bertuzzi.MAUI.MultiSelectListView</RepositoryUrl>
+		<Description>EventAggregator for MAUI</Description>
+		<PackageTags>maui controls listview</PackageTags>
+		<PackageIconUrl />
+		<PackageReleaseNotes>Multi-select ListView Control to MAUI</PackageReleaseNotes>
+		<PackageReleaseNotes>Initial Version</PackageReleaseNotes>
+		<Version>1.0.0</Version>
+		<PackageIcon>MultiSelectListViewIcon.png</PackageIcon>
+		
+		
 	</PropertyGroup>
 
 	<ItemGroup>
 	  <Folder Include="Platforms\Android\" />
 	  <Folder Include="Platforms\MacCatalyst\" />
 	  <Folder Include="Platforms\Windows\" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Include="..\Resources\MultiSelectListViewIcon.png">
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+	  </None>
 	</ItemGroup>
 
 </Project>
