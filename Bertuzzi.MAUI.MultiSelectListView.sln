@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32922.545
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bertuzzi.MAUI.MultiSelectListView", "Bertuzzi.MAUI.MultiSelectListView\Bertuzzi.MAUI.MultiSelectListView.csproj", "{3F0FB796-F0C6-450D-A442-2C0B92663958}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MauiMultiSelectListViewSample", "MauiMultiSelectListViewSample\MauiMultiSelectListViewSample.csproj", "{63656D89-B97F-4277-8C2A-5F2C6C9ABA92}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3F0FB796-F0C6-450D-A442-2C0B92663958}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F0FB796-F0C6-450D-A442-2C0B92663958}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F0FB796-F0C6-450D-A442-2C0B92663958}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F0FB796-F0C6-450D-A442-2C0B92663958}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63656D89-B97F-4277-8C2A-5F2C6C9ABA92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63656D89-B97F-4277-8C2A-5F2C6C9ABA92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63656D89-B97F-4277-8C2A-5F2C6C9ABA92}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{63656D89-B97F-4277-8C2A-5F2C6C9ABA92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63656D89-B97F-4277-8C2A-5F2C6C9ABA92}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63656D89-B97F-4277-8C2A-5F2C6C9ABA92}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C2D2EABC-F522-4B6E-8B8F-7BB2D7A1D5AB}
+	EndGlobalSection
+EndGlobal

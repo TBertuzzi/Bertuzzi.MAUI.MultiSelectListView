@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              xmlns:lv="clr-namespace:Bertuzzi.MAUI.MultiSelectListView;assembly=Bertuzzi.MAUI.MultiSelectListView" 
+             x:Class="MauiMultiSelectListViewSample.MainPage">
+
+    <StackLayout>
+        <ListView x:Name="lvwUsers" 
+            HasUnevenRows="true"
+            SeparatorVisibility="Default" 
+            ItemsSource="{Binding Users}"
+                  lv:MultiSelect.Enable="true">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <lv:SelectableCell x:Name="SelectableCell">
+
+                        <lv:SelectableCell.CheckView>
+                            <Image Source="select.png" WidthRequest="30" HeightRequest="30"></Image>
+                        </lv:SelectableCell.CheckView>
+
+                        <lv:SelectableCell.DataView>
+                            <StackLayout Orientation="Vertical" Padding="20,0,20,0">
+                                <Label Text="{Binding Name}" FontSize="17" ></Label>
+                            </StackLayout>
+                        </lv:SelectableCell.DataView>
+
+                    </lv:SelectableCell>
+
+                </DataTemplate>
+            </ListView.ItemTemplate>
+
+            <ListView.Behaviors>
+                <!--  <lv:SelectedItemBehavior Command="{Binding DisplayNameCommand}" PropertyName="Name"/>-->
+                <lv:SelectedItemBehavior Command="{Binding DisplayNameCommand}"/>
+            </ListView.Behaviors>
+
+        </ListView>
+    </StackLayout>
+
+</ContentPage>
